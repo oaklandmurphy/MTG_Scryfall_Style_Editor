@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> card art masher </title>
+		<style>
+			.search_bar {
+				margin-top: 50px;
+				margin-bottom: 50px;
+
+			}
+
+			.card_front {
+				width:  400px;
+				border-radius:  8px;
+				float:  left;
+				margin-right: 20px;
+			}
+
+			.card_title {
+				font-weight: bold;				
+			}
+
+
+		</style>
+		<!-- import script that lets you use getJSON -->
+		<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+		<!-- image of front of card -->
+		<script src="script.js"></script>
+
+	</head>
+
+	<body>
+		<!-- search bar -->
+		<div class="search_bar">
+			<input id="card_name_search" type="text" placeholder="Search for a card" >
+			
+		</div>
+
+		<div class="card_imgs">
+			<!-- image of front of card -->
+			<img class="card_front" id=card_img_front alt="no goyf sadge" >
+		</div>
+
+		<div class="card_info">
+			<!-- card name -->
+			<p>Card: </p>
+			<div id=card_title></div>
+
+			<!-- oracle text -->
+			<p>Oracle Text: </p>
+			<div id=card_oracle_text></div>
+
+		</div>
+	</body>
+
+</html>
